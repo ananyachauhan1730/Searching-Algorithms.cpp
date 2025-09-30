@@ -56,37 +56,57 @@ Worst case: Element not found after log₂(n) iterations.
 ⚡1. Linear Search Algorithm
 
 Step 1: Start
+
 Step 2: Input array of size n and the element key to search
+
 Step 3: Set index i = 0
+
 Step 4: Repeat until i < n
+
     • If arr[i] == key, then return i (element found)
+    
     • Else increment i = i + 1
+    
 Step 5: If loop ends, element not found → return -1
+
 Step 6: Stop
 
 ⚡2. Sequential Search Algorithm
-
 (Same as linear, sometimes used for ordered lists)
 
 Step 1: Start
+
 Step 2: Input array of size n (optionally sorted) and element key
+
 Step 3: For each index i from 0 to n-1
     • If arr[i] == key, return i (element found)
+    
     • If array is sorted and arr[i] > key, stop search (element not present)
+    
 Step 4: If loop completes, return -1
+
 Step 5: Stop
 
 ⚡3. Binary Search Algorithm
 
 Step 1: Start
+
 Step 2: Input sorted array of size n and element key
+
 Step 3: Initialize low = 0, high = n - 1
+
 Step 4: Repeat while low <= high
+
     • Compute mid = (low + high) / 2
+    
     • If arr[mid] == key → return mid (element found)
+    
     • Else if arr[mid] < key → set low = mid + 1
+    
     • Else → set high = mid - 1
+    
 Step 5: If loop ends, return -1 (element not found)
+
 Step 6: Stop
 
 # Conclusion:
